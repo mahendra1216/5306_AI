@@ -1,0 +1,636 @@
+version: "2.0"
+nlu:
+- intent: type_weather
+  examples: |
+    - air
+    - black clouds
+    - blinding snowstorm
+    - blizzard
+    - breath of air
+    - breeze
+    - breezy
+    - bright
+    - chilly
+    - clear
+    - clear skies
+    - clear sky
+    - cloud
+    - cloudy
+    - cold
+    - cold biting wind
+    - cold wind
+    - cool
+    - cyclone
+    - damp
+    - dark
+    - dark clouds
+    - dense clouds
+    - dew
+    - downpour
+    - drizzle
+    - dry
+    - dull
+    - dust storm
+    - flooded
+    - flooded roads
+    - fog
+    - foggy
+    - forecast
+    - freeze
+    - freezing
+    - freezing rain
+    - fresh
+    - frost
+    - frosty
+    - gale
+    - gust of wind
+    - gusty
+    - hail
+    - hailing
+    - hailstone
+    - hailstorm
+    - hazy
+    - heat
+    - heat wave
+    - heavy grey clouds
+    - heavy winds
+    - hot
+    - humid
+    - humidity
+    - hurricane
+    - icy
+    - it lightens
+    - it rains cats and dogs
+    - it thunders
+    - lightning
+    - mist
+    - misty
+    - moderate wind
+    - monsoon
+    - moon
+    - muggy
+    - overcast
+    - partly cloudy
+    - partly sunny
+    - precipitation
+    - pressure
+    - puff of wind
+    - rain
+    - rain and snow
+    - rain showers
+    - raindrop
+    - rainfall
+    - raining
+    - rainy
+    - sandstorms
+    - scattered showers
+    - shine
+    - shower
+    - showers
+    - sky
+    - sleet
+    - slight wind
+    - smoggy
+    - snow
+    - snowdrift
+    - snowfall
+    - snowflake
+    - snowing
+    - snowstorm
+    - snowy
+    - squall
+    - star
+    - sticky
+    - storm
+    - stormy
+    - strong wind
+    - sultry
+    - sun
+    - sunny
+    - sunny intervals
+    - sunshine
+    - thunder
+    - thunder-cloud
+    - thundershowers
+    - thunderstorm
+    - thunderstorms
+    - to pour
+    - tornado
+    - tornadoes
+    - twister
+    - typhoon
+    - very strong wind
+    - warm
+    - weather
+    - wet
+    - whirlwind
+    - wind
+    - windstorm
+    - windy
+    - above zero
+    - atmospheric absolute pressure
+    - average temperature
+    - barometer
+    - below freezing
+    - below zero
+    - degrees
+    - degrees above zero
+    - degrees below zero
+    - degrees Celsius
+    - degrees centigrade
+    - degrees Fahrenheit
+    - mercury
+    - synoptic
+    - temperature
+    - temperatures are in the mid
+    - thermometer
+    - usual temperature
+    - weather forecast
+    - weather station
+    - weatherman
+    - wind chill
+    - windchill
+    - Anybody notice the weather today?
+    - Are the roads flooded today?
+    - Awful weather, isn’t it?
+    - Do you know the weather forecast for today?
+    - Do I need to carry an umbrella today?
+    - Do I need to carry an umbrella tomorrow?
+    - How is the weather today?
+    - How cold is it going to get today?
+    - How cold is it going to be tomorrow?
+    - How hot is it going to get today?
+    - How hot is it going to be tomorrow?
+    - How humid is it going to get today?
+    - How humid is it going to be tomorrow?
+    - How rainy is it going to be today?
+    - How rainy is it going to be tomorrow?
+    - How’s the weather?
+    - How's the weather out in the country today?
+    - I wonder if there will be a storm?
+    - Is it cold outside?
+    - Is it expected to rain?
+    - Is it expected to snow?
+    - Is it snowing outside?
+    - Is it warm or cold?
+    - Is it windy out?
+    - It is so cloudy today, isn’t it?
+    - It is so sunny today, isn’t it?
+    - Is there much flooding on the roads today?
+    - Lovely day, huh?
+    - Nice weather today, isn’t it?
+    - So, what will the weather be like today?
+    - Tell me, what is the weather like today?
+    - Terrible weather, isn’t it?
+    - The forecast?
+    - What do you think the weather looks like?
+    - What is the humidity level right now?
+    - What is the temperature outside?
+    - What is the temperature?
+    - What is the weather expected to be like?
+    - What is the weather forecast saying?
+    - What is the weather forecast today?
+    - What is the weather today?
+    - What temperature do you think it is?
+    - What’s it like out there?
+    - What’s it like out?
+    - What's the humidity level right now?
+    - What’s the temperature like out there?
+    - What’s the temperature like?
+    - What’s the temperature today?
+    - What’s the temperature?
+    - What’s the weather forecast?
+    - What’s the weather like?
+    - What's the forecast like?
+    - What's the forecast?
+    - What's the weather like today?
+    - Will the weather keep up?
+    - is it good weather to go our now at arlington
+    - what is the weather outside
+- intent: greet_smalltalk
+  examples: |
+    - hi
+    - hello
+    - howdy
+    - hey
+    - heya
+    - hihi
+    - sup
+    - what's up
+    - hey there
+    - hello buddy
+    - wazzup
+    - yo
+- intent: goodbyes_smalltalk
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - talk to you later
+    - cya
+    - ciao
+- intent: affirm_smalltalk
+  examples: |
+    - yes
+    - yep
+    - yeah
+    - indeed
+    - that's right
+    - ok
+    - great
+    - correct
+    - perfect
+    - sounds good
+    - sounds great
+- intent: deny_smalltalk
+  examples: |
+    - no
+    - nope
+    - no way
+    - not true
+    - no thanks
+    - nah
+    - never
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a robot?
+    - am I talking to an actual person?
+    - you're a bot aren't you?
+    - are you even a real person?
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a robot?
+    - am I talking to an actual person?
+    - you're a bot aren't you?
+    - are you even a real person?
+    - are you bot?
+    - are you human
+    - are you human or bot
+    - how are you
+- intent: retaurent
+  examples: |
+    - suggest me the closest restaurant
+    - restaurants near me
+    - locate a restaurant near me
+    - find me a restaurant
+    - restaurants
+    - Can you find me a restaurant near me
+    - Show me the closest restaurant, please
+    - Give me the adress about the nearest restaurant, please
+    - Let me know the nearest restaurant
+    - suggest me a restaurant in rome
+    - restaurants in mumbai
+    - best restaurants in delhi
+    - good restaurant downtown
+    - great restaurant uptown
+    - I would like to visit an italian restaurant
+    - A family restaurant
+    - mexican
+    - Indian
+    - Chinese restaurant
+    - any restaurant
+    - I would like to visit a multicusine restaurant
+    - restaurant with a bar
+    - restaurant above 4 stars
+    - restaurant in open area
+    - kid-friendly restaurant
+    - restaurant with great ambience
+    - highest rated restaurant
+    - dinning with a view
+    - restaurant on a terrace
+    - fusion restaurant
+    - Book a table for two people
+    - Book a table for 2 people
+    - table for 10 persons
+    - table for six
+    - table near the pool side
+    - table for four with an child seating
+    - table for a couple
+    - couple
+    - table with high chairs
+    - table in the corner
+    - table with a booth
+    - restaurant was awesome
+    - food was great
+    - ambience was amazing
+    - service was okay
+    - add to my favourites
+    - give a 3.5 star
+    - average
+    - worst experience
+    - food was good was service wasnt
+    - the waiter was rude
+    - the meal was delicious
+    - food was exquisite
+    - can you let me know the nearest Mexican restaurents
+    - how about Indian Restaurents
+    - nearest restaurent
+    - nearest Indian restaurents
+    - Nearest Restaurents
+- intent: mood_great
+  examples: |
+    - I am happy
+    - I feel great
+    - I'm fine
+    - I had a great day
+    - Me, wonderful!
+    - I am amazed
+    - You are too cool
+    - I am loving it
+    - I am starting to like this
+    - I am feeling great
+    - Doing fine
+    - Never better
+    - Feeling lucky
+    - All great here
+    - Fantastic day
+    - What a great day
+    - I'm inspired
+    - It's perfect
+    - amazing
+    - I feel wonderful
+    - I am feeling very good
+    - I am great
+    - I'm good
+    - I'm feeling awesome
+    - I'm feeling happy
+    - Today is an awesome day!
+    - I'm so glad
+    - I'm just really happy right now
+    - nice
+    - okay great
+    - how are you doing
+    - am doing good
+    - okay
+    - Great Thank you
+- intent: mood_unhappy
+  examples: |
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - my day was horrible
+    - This is bad
+    - I am sick
+    - I am ill
+    - I am all low today
+    - Its dissapointing
+    - How irritating it is
+    - Am irritated
+    - I am not feeling well
+    - This sucks!
+    - I am feeling too bad
+    - Worst day ever!
+    - This feels bad
+    - I feel low
+    - Everything is bad today
+    - I feel very sad
+    - Feels horrible
+    - This is depressing
+    - I am depressed
+    - I feel bored
+    - I am feeling bored
+    - life is boring
+    - I am feeling empty
+    - I feel useless
+    - aweful
+    - depressed
+    - heavy
+    - I am feeling quite lost
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+    - Im feeling down
+    - I'm feeling sad
+    - Im feeling sad
+    - Im not okay
+    - Im feeling low
+    - Not good
+    - I'm awful
+    - I'm feeling very sad
+    - I'm uneasy
+    - Actually I'm not fine
+    - I'm not good
+    - I am as lonely as can be
+    - I am going through a rather rough time
+    - I'm grieving
+- intent: emergency
+  examples: |
+    - It's urgent I need to call the fire department, please
+    - We need the fire brigade, please
+    - I have to call the firefighters, please
+    - A fire has spread in the room, I have to call the firefighters, it's urgent!!!
+    - The fire alarm has been triggered, we need to contact the fire department, we need an help!!!
+    - I have to call the fire chief, please
+    - I need to alert the firefighters, fire doors are open
+    - I need to call firefighters, fire has spread into the building, is not a fire drill
+    - I have to call the fire engine, please
+    - Fire is spread into the rooms, we need a fire escape to exit from the building, I need to reach the fire department!!!
+    - I have to call firefighters and use fire exit!!!
+    - We need a fire extinguisher to stop the fire, I need to call the fire department, please
+    - Pay attention to the fire hazard, I have to call the fire department!!!
+    - I need help of the fire brigade for the use of fire hydrant
+    - The house is burned, I have to phone the fire department
+    - A fire lighter has exploded and the room has burned, I need help from the fire department
+    - I have to call the next fire protection district, please
+    - I need help of the fire authority, please
+    - I need to call the fire and rescue service, please
+    - Let's call the fire station, please
+    - Let's call volunteer firefighters, we need an urgent help!!!
+    - I have to call paid on call firefighters, please
+    - Let's call the fire protection, please
+    - Let's alert the fire investigators, please
+    - I need to call the firefighters
+    - I need to contact the firefighters
+    - Please provide me the number of fire brigade
+    - I have an emergency situation, please give me the firefighters number
+    - Let's contact the nearest firefighters station and ask for help
+    - We need help, I have fire in my house, I need to contact the fire brigade
+    - My house is burning, please I need to contact the firefighters
+    - Please I need to contact the fire and rescue service
+    - Neighbour's house is burning, I need to contact fire department
+    - I have to call the fireman
+    - Please let's contact the firefighters department
+    - We need the service of the firefighters here
+    - The fire alarm is not working let's contact the firefighters
+    - Please I have to call the fire patrol immediately
+    - I need to phone the firefighters
+    - I have to phone the firefighters station
+    - We cannot stop the fire, we need to call the fire brigade
+    - Fire is everywhere, I have to call the fire department
+    - Fire is unstoppable, I have to call the close fire station
+    - Fire is developing very fast, I have to call firemen
+    - We have emergency at house, it burning, I have to contact the fire protection
+    - emergency
+    - call police
+    - The neighbourhood house is on fire
+- intent: locate_car_dealer
+  examples: |
+    - Show me the closest car dealer, please
+    - I'd like to go to an automobile dealer to buy a car, tell me the closest one, please
+    - i want to buy a car, show me the nearest car dealership, please
+    - I'd go to a showroom car, show me one please
+    - I have no time and I'm looking for a nearby automotive dealer, please
+    - I'm looking for a nearby car dealer, please
+    - Give me the adress about the nearest automobile dealer, please
+    - I need to buy a car let me see the adress of a car dealership, please
+    - Let me see a showroom car, please
+    - I need a car, show me the nearest automotive dealer, please
+    - I'd like a sport car, please
+    - I'd like to buy a city car, please
+    - I would drive a sedan, please
+    - I want for me and my family a suv, please
+    - I like feeling air on my hair, so cabriolet it's the right choice for me!
+    - For my family I need a station wagon, please
+    - I need a city car to reach my workplace, please
+    - I like to drive fast and I'd like to buy a coupè, please
+    - I prefer a sedan, please
+    - I live in a countryside and a pickup is the right choice for me, please
+    - I'd like a electric car, please
+    - I prefer a hybrid, please
+    - I would an european car, please
+    - I would to drive an american car, please
+    - I want to buy a japanese car, please
+    - I love german cars, please
+    - I prefer italian cars, please
+    - I would buy an american car, please
+    - I love italian cars, please
+    - I prefer to ride an italian car, please
+    - I trust in reliability of german cars, please
+    - I'd buy a japanese car, please
+    - I want to save money for a car, please
+    - I have no problem, I'm able to spend lot of money for my car, please
+    - I don't want to spend much more for a car, less than 10.000 eur, please
+    - I love car and I'm willing to spend lot money, please
+    - Buy a car it's not an investment for me, so less than 15.000 eur I want to spend for one, please
+    - For a car that I like I'm able to spend up to 50.000 eur, please
+    - I want to save money, so a cheap car for me, please
+    - I would save money for my next car, please
+    - I want to spend less then 20.000 eur for the next auto, please
+    - I would spend up to 30.000 eur for my vehicle, please
+    - I prefer an used car, please
+    - I'd like a new car, please
+    - I'd like to try a leasing, please
+    - I don't drive a lot, so I prefer a used car, please
+    - I travel a few kilometers in a year so a second hand car it's enough for me, please
+    - I would an used car as a second car for my family, please
+    - I prefer a fresh car because I want to keep it for long time, please
+    - I would a leasing car for my job, please
+    - I prefer an old car for myself, please
+    - I'd like a recent car for my family, please
+    - I wanted to buy a car
+- intent: mood_angry_nervous
+  examples: |
+    - I am angry
+    - I am feeling so angry
+    - I am so annoyed
+    - It's annoying
+    - That's aggravating
+    - I'm furious
+    - That is infuriating
+    - I'm very mad
+    - Everything vexes me
+    - I am outraged
+    - That is outrageous!
+    - I feel hostile
+    - I am very frustrated
+    - It is irritating me
+    - I feel so offended
+    - I am full of fury
+    - I feel very belligerent
+    - I hate doing this
+    - I have no patience today
+    - I could not control my anger
+    - I’m annoyed
+    - I’m super annoyed
+    - I’m so mad.
+    - I'm enraged
+    - I’m straight up angry.
+    - This is maddening!
+    - I'm pissed off
+    - I'm pissed
+    - You bet I'm angry
+    - That made me angry
+    - U made me angry
+    - I'm still angry about that
+    - I am scared
+    - I feel scared
+    - I'm worried
+    - I am terrified
+    - That is frightening
+    - I feel intimidated
+    - That is intimidating
+    - I am petrified
+    - I am afraid
+    - I feel anxious
+    - I'm having a bad feeling
+    - I'm fearful
+    - I panicked
+    - I shrank back in fear
+    - I am scared to death
+    - I broke out in a cold sweat
+    - That startled me!
+    - I'm spooked easily
+    - I'm trembling from fear
+    - I'm horrified
+    - I am nervous
+    - I am stressed out
+    - I feel nervous
+    - I am anxious
+    - This is nerveracking
+    - This is nervewracking
+    - This is nerve racking
+    - This is nerve wracking
+    - I feel like I am going to throw up
+    - I have a lump in my throat
+    - I have butterflies in my stomach
+    - I am a bundle of nerves
+    - I am breaking out in a cold sweat
+    - I am afraid of my own shadow
+    - I am like a cat on hot bricks
+    - I am jumping out of my skin
+    - I am at my wits' end
+    - I am tongue tied
+    - I am on edge
+    - I am very tense
+    - I feel uneasy
+    - I am alarmed
+    - I am troubled
+    - I'm tensed
+    - I'm stressed
+    - I'm under a lot of stress
+    - I'm constantly worried
+    - I feel constant tension
+    - I’m anxious.
+    - I’m suffering from anxiety.
+    - I’ve been feeling rather anxious lately.
+    - My anxiety is rather through the roof these days.
+    - I’m feeling rather restless
+    - I cannot concentrate as I'm worried constantly
+    - I'm under immense stress
+    - It's been a rough couple of days. VERY stressful
+    - I'm quite tensed.
+    - There's been quite a few changes in my life. I don't think I am handling them well. It's quite stressful.
+    - I find myself worrying about every little detail
+    - I am a chronic worrier.
+    - I’m feeling rather restless and a horde of worries is bothering me
+    - I cannot concentrate due to the whole number of worries that are bothering me
+- intent: course_name_intent
+  examples: |
+    - does [cs](course_name)offered by UTA
+    - does [ba](course_name)offered by UTA
+- lookup: course_name
+  examples: |
+    - cs
+    - ba

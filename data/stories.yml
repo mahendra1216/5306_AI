@@ -1,0 +1,104 @@
+version: "2.0"
+stories:
+- story: happy path 1
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbyes_smalltalk
+  - action: utter_goodbye
+- story: happy path 2
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: type_weather
+  - action: action_ask_weather
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbyes_smalltalk
+  - action: utter_goodbye
+- story: happy path 3
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: retaurent
+  - action: action_ask_google
+  - intent: mood_great
+  - action: utter_happy
+- story: happy path 4
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: locate_car_dealer
+  - action: action_ask_car_dealers
+  - intent: mood_great
+  - action: utter_happy
+- story: happy path 5
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm_smalltalk
+  - action: utter_happy
+  - intent: goodbyes_smalltalk
+  - action: utter_goodbye
+- story: sad path 2
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny_smalltalk
+  - action: utter_goodbye
+- story: Story from Conversation ID 9b9b6a5bbd1a4da4a31b39f40d6f5e5f
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: type_weather
+  - action: action_ask_weather
+  - intent: emergency
+  - action: utter_emergency
+  - intent: emergency
+  - action: utter_emergency
+  - intent: retaurent
+  - action: action_ask_google
+  - intent: retaurent
+  - action: action_ask_google
+- story: Story from Conversation ID 6968c81f8c0141feaf1f6c0db8dd6394
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: locate_car_dealer
+  - action: action_ask_car_dealers
+  - intent: mood_great
+  - action: utter_happy
+
+- story: story to deal with uta caps services
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: mood_angry_nervous
+  - action: utter_uta_caps
+  - action: utter_did_that_help
+  - intent: deny_smalltalk
+  - action: utter_goodbye
+- story: story to deal with uta courses
+  steps:
+  - intent: greet_smalltalk
+  - action: utter_greet
+  - intent: course_name_intent
+  - action: action_check_existence
+  - intent: deny_smalltalk
+  - action: utter_goodbye
